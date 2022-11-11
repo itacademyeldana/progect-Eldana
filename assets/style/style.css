@@ -1,0 +1,149 @@
+@import "./fonts.css";
+
+
+:root {
+    --dark: rgb(0, 0, 0);
+    --light: rgb(255, 255, 255);
+}
+
+/* BASE CONFIG */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    background: none;
+    border: none;
+}
+/* BASE CONFIG */
+.container {
+    max-width: 1240px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+/*HEADER SECTION*/
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    height: 60px;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    position: relative;
+    font-size: 28px;
+}
+
+.header__link {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--dark);
+}
+.rectangle {
+    width: 1440px;
+    height: 1px;
+    top: 90px;
+    background: #E6E6E6;
+    margin-bottom: 60px;
+}
+/*ABOUT SECTIONS*/
+.illustration {
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #999999;
+    margin-bottom: 18px;
+}
+.about__title {
+    font-family: 'Tenor Sans';
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #000000;
+    width: 429px;
+    margin-bottom: 27px;
+}
+.about__text {
+    font-family: 'Source Serif Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    width: 419px;
+}
+.about__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 51px;
+}
+/*ABOUT SECTIONS*/
+.city {
+    padding: 20px 130px;
+}
+.city .city__img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+.city__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 74px;
+    column-gap: 20px;
+}
+.city__grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 74px;
+    column-gap: 20px;
+}
+.text {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #999999;
+    margin-bottom: 18px;
+}
+.title {
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--dark);
+    height: 72px;
+    margin-bottom: 15px;
+}
+.desc {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 12px;
+    color: #000000;
+    margin-bottom: 74px;
+}
+
+
+
